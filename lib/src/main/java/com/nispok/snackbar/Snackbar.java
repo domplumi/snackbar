@@ -75,7 +75,7 @@ public class Snackbar extends SnackbarLayout {
     private int mUndefinedColor = -10000;
     private int mUndefinedDrawable = -10000;
 
-    private SnackbarType mType = SnackbarType.SINGLE_LINE;
+    private SnackbarType mType = SnackbarType.ONE_LINE;
     private SnackbarDuration mDuration = SnackbarDuration.LENGTH_LONG;
     private CharSequence mText;
     private TextView snackbarText;
@@ -571,7 +571,7 @@ public class Snackbar extends SnackbarLayout {
                     parent, FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT, mPosition);
         } else {
             // Tablet/desktop
-            mType = SnackbarType.SINGLE_LINE; // Force single-line
+            mType = SnackbarType.ONE_LINE; // Force single-line
             layout.setMinimumWidth(res.getDimensionPixelSize(R.dimen.sb__min_width));
             layout.setMaxWidth(
                     mMaxWidthPercentage == null

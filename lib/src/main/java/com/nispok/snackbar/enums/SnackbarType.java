@@ -5,11 +5,15 @@ public enum SnackbarType {
     /**
      * Snackbar with a single line
      */
-    SINGLE_LINE(48, 48, 1),
+    ONE_LINE(48, 48, 1),
     /**
      * Snackbar with two lines
      */
-    MULTI_LINE(48, 80, 2);
+    TWO_LINES(48, 80, 2),
+    /**
+     * Snackbar with as many lines as you want
+     */
+    INFINITY_LINES(48, 816, 25);
 
     private int minHeight;
     private int maxHeight;
