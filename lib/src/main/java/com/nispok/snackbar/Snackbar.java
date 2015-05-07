@@ -571,7 +571,6 @@ public class Snackbar extends SnackbarLayout {
                     parent, FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT, mPosition);
         } else {
             // Tablet/desktop
-            mType = SnackbarType.ONE_LINE; // Force single-line
             layout.setMinimumWidth(res.getDimensionPixelSize(R.dimen.sb__min_width));
             layout.setMaxWidth(
                     mMaxWidthPercentage == null
